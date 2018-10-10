@@ -8,9 +8,8 @@
         <style>
 
         </style>
-
+        <link href="CSS.css" type="text/css" rel="stylesheet">
         <?php
-        include 'CSS.html';
         include 'Menu.html';
 
         include "DynamicTimeTable (1).php";

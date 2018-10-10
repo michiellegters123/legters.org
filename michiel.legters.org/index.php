@@ -2,9 +2,7 @@
 <html lang="nl">
 
     <head>
-        <?php
-        include 'CSS.html';
-        ?>
+        <link href="CSS.css" type="text/css" rel="stylesheet">
 
     </head>
 
