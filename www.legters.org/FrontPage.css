@@ -3,17 +3,40 @@ body
     background-color: #2d2b2c;
 }
 
+@font-face
+{
+    font-family: CardFont;
+    src: url("expressway rg.ttf");
+}
+
 .CenterDiv
 {
-    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
+    position: absolute;
+}
+
+#PageTitle
+{
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 5vw;
+    user-select: none;
+    font-family: CardFont;
+
+    transition: all .3s ease-in-out;
 }
 
 #HostNames
 {
-    display: flex;
-    justify-content: space-between;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 5vw 0px;
+
     width: 80%;
     margin: auto;
     list-style: none;
@@ -21,14 +44,12 @@ body
 
 #HostNames li
 {
-    width: 20%;
     padding-top: 10%;
     padding-bottom: 10%;
-    margin-right: auto;
 
     cursor: pointer;
 
-    display: table;
+    display: table-cell;
 
     background-color: #40bbc5;
     border-radius: 20px;
@@ -37,11 +58,7 @@ body
     -moz-box-shadow: 13px 13px 41px 1px rgba(0, 0, 0, 0.57);
     box-shadow: 13px 13px 41px 1px rgba(0, 0, 0, 0.57);
 
-}
-
-#HostNames li
-{
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #HostNames li:hover
@@ -51,21 +68,7 @@ body
 
 #HostNames li:active
 {
-    transform: scale(2.3);
-}
-
-@media only screen and (max-width: 900px)
-{
-    #HostNames
-    {
-        display: block;
-    }
-
-    #HostNames li
-    {
-
-        margin-top: 50px;
-    }
+    transform: scale(1.5);
 }
 
 .TextCenterDiv
@@ -77,8 +80,11 @@ body
 {
     position: absolute;
     text-align: center;
+    overflow: hidden;
     width: 100%;
     color: #e6e6e6;
-    font-size: 5vw;
-    margin-top: -2.5vw;
+
+    font-family: CardFont;
+    font-size: 4.5vw;
+    margin-top: -2.25vw;
 }
