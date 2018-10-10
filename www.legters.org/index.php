@@ -1,7 +1,11 @@
-<html>
+<html lang="en">
 
     <head>
         <link href="FrontPage.css" rel="stylesheet" type="text/css">
+        <title>Main Page</title>
+        <meta name="description" content="Personal site">
+        <meta name="keywords" content="FrontPage">
+        <meta name="author" content="Nathan, Nick, Michiel">
         <script>
 
             String.prototype.replaceAt = function (index, replacement)
